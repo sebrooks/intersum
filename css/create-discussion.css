@@ -1,0 +1,19 @@
+.nav-bar {
+  background-color: black;
+  color: white;
+}
+
+.nav-bar h1 {
+  display: inline;
+  margin-left: 50px;
+}
+
+form {
+  text-align:center;
+  margin-bottom: 50px;
+  margin-top:50px;
+}
+
+.button {
+  text-align: center;
+}
