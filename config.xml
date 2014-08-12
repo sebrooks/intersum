@@ -1,10 +1,10 @@
-    <widget id="com.example.hello" version="0.0.1">
-        <name>HelloWorld</name>
+    <widget id="intersum" version="0.0.1">
+        <name>Intersum</name>
         <description>
-            A sample Apache Cordova application that responds to the deviceready event.
+            An app that helps group members and group leaders to efficently collaborate.
         </description>
-        <author email="dev@callback.apache.org" href="http://phonegap.com">
-            Apache Cordova Team
+        <author email="teamintersum@gmail.com" href="http://phonegap.com">
+            Intersum Team
         </author>
         <content src="index.html" />
         <access origin="*" />
