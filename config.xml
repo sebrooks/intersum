@@ -1,7 +1,7 @@
-    <widget id="intersum" version="0.0.1">
+    <widget id="com.intersum" version="0.0.1">
         <name>Intersum</name>
         <description>
-            An app that helps group members and group leaders to efficently collaborate.
+            An app that makes managing groups easier.
         </description>
         <author email="teamintersum@gmail.com" href="http://phonegap.com">
             Intersum Team
