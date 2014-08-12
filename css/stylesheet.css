@@ -56,3 +56,10 @@ the same across most pages
 	width: auto;
 }
 
+.alert-form{
+  text-align: center;
+}
+
+.send-alert {
+  text-align: center;
+}
