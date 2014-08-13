@@ -2,28 +2,39 @@
 <head>
 	<title>GenTech Alerts</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-		<div class="nav">
-	
-	<a href="#"><img src="img/White Arrow.gif." class="arrow"></a>
+	<div class="nav">
 
-	<a href="#"><img src="img/Menu.jpg" class="menu"></a>
+		<a href="#"><img src="img/White Arrow.gif." class="arrow"></a>
 
-	<h1>GenTech Alerts</h1>
+		<a href="#"><img src="img/Menu.jpg" class="menu"></a>
+
+		<h1>GenTech Alerts</h1>
 
 	</div>
 	
 	<div>
 		<form class="alert-form">
-        <textarea name="alert" cols="40" rows="5"></textarea>
-      </form>
+			<textarea name="alert" cols="40" rows="5"></textarea>
+		</form>
 	</div>
 	
 	<div class="send-alert">
 		<button>send alert</button>
 	</div>
 </body>
+<script type="text/javascript">
+$( document ).ready(function() {
+	$( ".send-alert" ).click(function( event ) {
+
+		alert( "Alert sent" );
+
+	});
+});	
+</script>
 
 </html>
