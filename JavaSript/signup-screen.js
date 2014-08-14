@@ -36,6 +36,18 @@ $(document).ready(function(){
     });
     $('#upload-file-button').click(function()) {
 
+      var file = new Parse.File("myfile.zzz", fileData, "image/png"); {
+        
+        
+        success: function(user) {
+            alert("File save successful!");
+      },
+      error: function(user, error) {
+        // The login                                                        
+        alert("Error:" + error.code + " " + error.message)
+      }
+
+
 
     }
 
