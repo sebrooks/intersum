@@ -19,7 +19,7 @@ $(document).ready(function(){
             alert("User signed up!");
           },
           error: function(error) {
-            alert("Error: "+error.code+" "+error.message)
+            alert("Error: " + error.code + " " + error.message)
           }
         });
       });
@@ -27,17 +27,16 @@ $(document).ready(function(){
 
       Parse.User.logIn( $('#existing-username').val $('#existing-password').val  , {
         success: function(user) {
-        // Do stuff after successful login.
+            alert("User Logged in!");
       },
       error: function(user, error) {
-        // The login failed. Check error to see why.
+        // The login                                                        
+        alert("Error:" + error.code + " " + error.message)
       }
+    });
     $('#upload-file-button').click(function()) {
-          var base64 = "V29ya2luZyBhdCBQYXJzZSBpcyBncmVhdCE=";
-    var file= new Parse.File("#upload-file-button:file", {base64:base64});
-    
-    
+
+
     }
 
 });
-
