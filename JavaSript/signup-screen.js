@@ -32,10 +32,12 @@ $(document).ready(function(){
       error: function(user, error) {
         // The login failed. Check error to see why.
       }
-    });
     $('#upload-file-button').click(function()) {
-
-    }
+          var base64 = "V29ya2luZyBhdCBQYXJzZSBpcyBncmVhdCE=";
+    var file= new Parse.File("#upload-file-button:file", {base64:base64});
     
+    
+    }
+
 });
 
