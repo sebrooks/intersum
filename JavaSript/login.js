@@ -4,17 +4,21 @@ $(document).ready(function(){
 
 	$("#existing-user-submit").click(function() {
 
-		var username = $("#existing-username").val();
-		var password = $("#existing-password").val();
+			var username = $("#existing-username").val();
+			var password = $("#existing-password").val();
 
-		Parse.User.logIn (username, password){
+		if (username && password) {
 
-			success: function(user) {
-				console.log("User Logged in!");
-			},
-			error: function(user, error) {                 
-				console.log("Error:" + error.code + " " + error.message);
-			}
-		});
+			Parse.User.logIn("username", "password" {
+				success: function(user){ console.log("Logged in!"); };
+				error: function(user, error){ console.log("Error:" + error.code + " " + error.message); };
+			});
+		};
+		else{
+			alert("Error: Missing input feild!")
+		}
 
+	});
+
+//last
 });
