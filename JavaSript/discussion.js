@@ -3,15 +3,17 @@ $(document).ready(function(){
 
 	$("#begin-new-post-button").click(function() {
 
-
-if (post) {};
 		var postText =  $("#begin-new-post-text").val();
+
+if (postText) {
 		var Post = Parse.Object.extend("Post");
 		var myPost = new Post();
 
-		myPost.set(postText);
+		myPost.set("text", postText);
 
 		myPost.save()
+	};
+
 	});
 });
 
