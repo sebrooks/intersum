@@ -1,54 +1,33 @@
 $(document).ready(function(){
-  Parse.initialize("NzjDI96DNyAS8U4DNWYgGxCS8lSg9kyks2azZ2UC","Mvi4oDnLqRqImITOqn1pN1BwdejN6PvLoUnpVL6I");
+  Parse.initialize("NzjDI96DNyAS8U4DNWYgGxCS8lSg9kyks2azZ2UC","F5p230fkKINZ5KP44qR7hk7isWdD9JXa2Tk1rrjm");
 
-  $("#new-user-submit").click(function()) {
+  $("#new-user-submit").click(function() {
 
-        // 2. Create a new Parse.User.
-        var user = new Parse.User();
+    var username = $("#new-username").val();
+    var password = $("#new-password").val();
+    var email = $("#new-email").val()
 
-        // 3. Set a username.
-        user.set('username', $('#new-username').val());
+    if(username && password){
+      var user = new Parse.User();
 
-        // 4. Set a password.
-        user.set('password', $('#new-password').val());
-        
-        user.set('email', $('#new-email').val());
-        // 5. Sign them up!
-        user.signUp(null, {
-          success: function(user) {
-            alert("User signed up!");
-          },
-          error: function(error) {
-            alert("Error: " + error.code + " " + error.message)
-          }
-        });
+      user.set("username", username);
+
+      user.set("password", password);
+
+      user.set("email", email);
+
+      user.signUp(null, {
+        success: function(user) {
+          console.log("User signed up!");
+        },
+
+        error: function(error) {
+          console.log("Error: There was a problem with the sign up.");
+        }
       });
-    $('#existing-user-submit').click(function()) {
-
-      Parse.User.logIn( $('#existing-username').val $('#existing-password').val  , {
-        success: function(user) {
-            alert("User Logged in!");
-      },
-      error: function(user, error) {
-        // The login                                                        
-        alert("Error:" + error.code + " " + error.message)
-      }
-    });
-    $('#upload-file-button').click(function()) {
-
-      var file = new Parse.File("myfile.zzz", fileData, "image/png"); {
-        
-        
-        success: function(user) {
-            alert("File save successful!");
-      },
-      error: function(user, error) {
-        // The login                                                        
-        alert("Error:" + error.code + " " + error.message)
-      }
-
-
-
     }
-
+    else{
+      alert("Missing feild input.")
+    }
+  }); 
 });
