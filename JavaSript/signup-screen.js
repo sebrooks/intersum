@@ -8,6 +8,7 @@ $(document).ready(function(){
     var email = $("#new-email").val()
 
     if(username && password){
+
       var user = new Parse.User();
 
       user.set("username", username);
@@ -22,7 +23,7 @@ $(document).ready(function(){
         },
 
         error: function(error) {
-          console.log("Error: There was a problem with the sign up.");
+          console.log("Error!");
         }
       });
     }
