@@ -1,5 +1,5 @@
 /*********
-The following section is 
+The following section is the header and remains
 the same across most pages
 *********/
 body{
@@ -14,22 +14,29 @@ body{
   height: 30px;
   margin-bottom: 10px;
 }
+
 .nav .arrow{
   height: 30px;
   width: auto;
   float: left;
 }
+
 .nav .menu{
   height: 30px;
   width: auto;
   float: right;
 }
 
-
 .nav h1{
   text-align: center;
   color: #fff;
   display: inline;
+}
+
+.nav p {
+  display: inline;
+  background-color: white;
+  margin-left: 25px
 }
 
 .tab-bar li {
