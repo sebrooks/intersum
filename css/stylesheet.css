@@ -166,7 +166,7 @@ The previous section is
 the same across most pages
 *********/
 
-/* ==================== STUDENT PROFILE CSS ==================== */
+/* ==================== Member PROFILE CSS ==================== */
 
 /*********
 The following section is 
@@ -252,7 +252,7 @@ ul {
 
 
 
-/* ==================== STUDENT EVENTS CSS ==================== */
+/* ==================== Member EVENTS CSS ==================== */
 
 /*********
 The following section is the header and remains
@@ -316,17 +316,17 @@ the same across most pages
 
 
 
-.student-names ul a{
+.member-names ul a{
 text-decoration:none;
   color:#000;
 }
 
-.student-names ul{
+.member-names ul{
 list-style-type:none;
   padding:0px;
 }
 
-.student-names ul li{
+.member-names ul li{
   padding: 10px;
   border: 3px solid black;
 }
@@ -426,3 +426,4 @@ body{
 The previous section is 
 the same across most pages
 *********/
+
