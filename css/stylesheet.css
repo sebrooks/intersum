@@ -1,3 +1,4 @@
+/* ==================== STYLESHEET CSS ==================== */
 /*********
 The following section is 
 the same across most pages
@@ -63,3 +64,357 @@ the same across most pages
 .send-alert {
   text-align: center;
 }
+
+/* ==================== LOG-IN SCREEN CSS ==================== */
+
+/*----- Tabs -----*/
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#7FB5DA;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#ddd;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
+
+/*********
+The following section is 
+the same across most pages
+*********/
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.nav {
+  background-color:#000; 
+  padding: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.nav .arrow{
+  height: 30px;
+  width: auto;
+  float: left;
+}
+.nav .menu{
+  height: 30px;
+  width: auto;
+  float: right;
+}
+
+
+.nav h1{
+  text-align: center;
+  color: #fff;
+  display: inline;
+}
+/*********
+The previous section is 
+the same across most pages
+*********/
+
+/* ==================== STUDENT PROFILE CSS ==================== */
+
+/*********
+The following section is 
+the same across most pages
+*********/
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.nav {
+  background-color:#000; 
+  padding: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.nav .arrow{
+  height: 30px;
+  width: auto;
+  float: left;
+}
+.nav .menu{
+  height: 30px;
+  width: auto;
+  float: right;
+}
+/*********
+The previous section is 
+the same across most pages
+*********/
+.profile-img {
+  clear: both;
+  float: left;
+  margin-right: 25px;
+}
+
+.profile-img img{
+  height: 180px;
+  width: 180px;
+
+}
+.profile-summary {
+  padding-top: 25px;
+}
+
+.add-file {
+    clear: both;
+    margin-top:  100px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.addnew-label {
+  float: left;
+}
+.addnew-symbol {
+  text-align: right;
+
+}
+
+
+.files li{
+  padding: 15px;
+  border: 5px solid black;
+
+
+}
+
+
+.files ul a{
+  text-decoration: none;
+  color: #000;
+  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+
+
+/* ==================== STUDENT EVENTS CSS ==================== */
+
+/*********
+The following section is the header and remains
+the same across most pages
+*********/
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.nav {
+  background-color:#000; 
+  padding: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.nav .arrow{
+  height: 30px;
+  width: auto;
+  float: left;
+}
+
+.nav .menu{
+  height: 30px;
+  width: auto;
+  float: right;
+}
+
+.nav h1{
+  text-align: center;
+  color: #fff;
+  display: inline;
+}
+
+.nav p {
+  display: inline;
+  background-color: white;
+  margin-left: 25px
+}
+
+.tab-bar li {
+  display:inline;
+  margin-left: -3px;
+  border: 1px solid black;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  font-size:25px;
+}
+
+.tab-bar a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*********
+The previous section is 
+the same across most pages
+*********/
+
+
+
+.student-names ul a{
+text-decoration:none;
+  color:#000;
+}
+
+.student-names ul{
+list-style-type:none;
+  padding:0px;
+}
+
+.student-names ul li{
+  padding: 10px;
+  border: 3px solid black;
+}
+
+.add-new {
+  background:black;
+  color: white;
+}
+
+.add-new p {
+  display:inline;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 55px;
+}
+
+.pop-up {
+  background-color: black;
+}
+
+/* ==================== VIEW DOCUMENT CSS ==================== */
+
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.nav{
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.document{
+  background-color: #000;
+  height: 500px;
+  width: 410px;
+  padding: 19px;
+}
+
+img{
+  height: 500;
+  width: auto;
+
+}
+
+
+.exit{
+  height: 30px;
+  background-color: #000;
+
+}
+.exit a{
+  text-decoration: none;
+  color: #fff;
+  text-align: center; 
+}
+
+/* ==================== CREATE DISCUSSIONS CSS ==================== */
+
+/*********
+The following section is 
+the same across most pages
+*********/
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.nav {
+  background-color:#000; 
+  padding: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.nav .arrow{
+  height: 30px;
+  width: auto;
+  float: left;
+}
+.nav .menu{
+  height: 30px;
+  width: auto;
+  float: right;
+}
+
+
+.nav h1{
+  text-align: center;
+  color: #fff;
+  display: inline;
+}
+/*********
+The previous section is 
+the same across most pages
+*********/
