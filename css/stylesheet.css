@@ -9,6 +9,14 @@ body{
   border: 0px;
 }
 
+.bar-nav {
+  background-color: #00BCD4;
+}
+
+.icon-left-nav {
+  color: #77FF03;
+}
+
 .nav {
   background-color:#000; 
   padding: 10px;
