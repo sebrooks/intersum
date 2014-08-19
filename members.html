@@ -43,25 +43,26 @@
     </ul>
   </div>
 
-  <a href="add-new-member.html">
+  <a href="#openModal">
     <div class="add-new">
       <p class="add-new_text">Add New</p>
       <p class="add-new_symbol">+</p>
     </div>
   </a>  
 
-  <a href="#addnew-modal" class="btn">Open modal</a>
-  <div id="addnew-modal" class="modal">
-    <header class="bar bar-nav">
-      <a class="icon icon-close pull-right" href="#addnew-modal"></a>
-      <h1 class="title">Modal</h1>
-    </header>
 
-    <div class="content">
-      <p class="content-padded">The contents of my modal go here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
-    </div>
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+            <form>
+                First Name: <input type="text" name="first-name"><br>
+                Last Name:  <input type="text" name="last-name"><br>
+                Email:      <input type="text" name="last-name"><br>
+                  <button>Add Member</button>
+            </form>
   </div>
 
+</div>
 
 </body>
 
