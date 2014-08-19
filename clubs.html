@@ -1,43 +1,51 @@
 <html>
-  <head>
-    <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
-    <script type="text/javascript" src="JavaScript/jquery.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
-    <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <title>Clubs</title>
-  </head>
+<head>
+  <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
+  <script type="text/javascript" src="JavaScript/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <title>Clubs</title>
+</head>
 
-  <body>
-    <div class="nav">
-      
-      <header class="bar bar-nav">
-        <a href="Log-In.html">
+<body>
+  <div class="nav">
+
+    <header class="bar bar-nav">
+      <a href="Log-In.html">
         <button class="btn btn-link btn-nav pull-left">
           <span class="icon icon-left-nav"></span>
-          Clubs
-          </button>
-        </a>
-      </header>
-    </div>
+        </button>
+      </a>
+      <h1>Clubs</h1>
+    </header>
+  </div>
 
-    <div class="tab-bar">
-      <ul>
-        <a href="clubs.html"><li id="members">Clubs</li></a>
-      </ul>
-    </div>
-    
-    <div class="member-names">
-      <ul>
-        <a href="members.html"><li>GenTech</li></a>
-        <li>Key Club</li>
-        <li>Golf</li>
-      </ul>
-    </div>
+<div class="content-padded">
+  <ul class="table-view">
+    <li class="table-view-cell">
+      <a href="members.html"class="navigate-right">
+        GenTech
+      </a>
+    </li>
+    <li class="table-view-cell">
+      <a class="navigate-right">
+        Key Club
+      </a>
+    </li>
+    <li class="table-view-cell">
+      <a class="navigate-right">
+        Golf
+      </a>
+    </li>
+  </ul>
   
-    <div class="add-new">
-      <p class="add-new_text">Add New</p>
-      <p class="add-new_symbol">+</p>
-    </div>
-  </body>
+
+    </button>
+<button class="btn btn-primary">
+  <span class="icon icon-plus"></span>
+  Add New
+</button>
+</div>
+</body>
 </html>
