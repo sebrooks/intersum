@@ -15,15 +15,12 @@ body {
   background-color: #00BCD4;
 }
 
-.bar-tab {
-  color: #00BCD4;+
-}
-
 .icon-left-nav, .bar .btn-link {
   color: #77FF03;
 }
 
 .nav {
+  position: absolute;
   background-color:#00BCD4; 
   padding: 10px;
   height: 30px;
