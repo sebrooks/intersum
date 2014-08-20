@@ -5,7 +5,7 @@ the same across most pages
 
 RATCHET OVERRIDES
 *********/
-body{
+body {
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -83,56 +83,56 @@ the same across most pages
 
 /*----- Tabs -----*/
 .tabs {
-    width:100%;
-    display:inline-block;
+  width:100%;
+  display:inline-block;
 }
- 
-    /*----- Tab Links -----*/
-    /* Clearfix */
-    .tab-links:after {
-        display:block;
-        clear:both;
-        content:'';
-    }
- 
-    .tab-links li {
-        margin:0px 5px;
-        float:left;
-        list-style:none;
-    }
- 
-        .tab-links a {
-            padding:9px 15px;
-            display:inline-block;
-            border-radius:3px 3px 0px 0px;
-            background:#7FB5DA;
-            font-size:16px;
-            font-weight:600;
-            color:#4c4c4c;
-            transition:all linear 0.15s;
-        }
- 
-        .tab-links a:hover {
-            background:#a7cce5;
-            text-decoration:none;
-        }
- 
 
-    /*----- Content of Tabs -----*/
-    .tab-content {
-        padding:15px;
-        border-radius:3px;
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-        background:#ddd;
-    }
- 
-        .tab {
-            display:none;
-        }
- 
-        .tab.active {
-            display:block;
-        }
+/*----- Tab Links -----*/
+/* Clearfix */
+.tab-links:after {
+  display:block;
+  clear:both;
+  content:'';
+}
+
+.tab-links li {
+  margin:0px 5px;
+  float:left;
+  list-style:none;
+}
+
+.tab-links a {
+  padding:9px 15px;
+  display:inline-block;
+  border-radius:3px 3px 0px 0px;
+  background:#7FB5DA;
+  font-size:16px;
+  font-weight:600;
+  color:#4c4c4c;
+  transition:all linear 0.15s;
+}
+
+.tab-links a:hover {
+  background:#a7cce5;
+  text-decoration:none;
+}
+
+
+/*----- Content of Tabs -----*/
+.tab-content {
+  padding:15px;
+  border-radius:3px;
+  box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+  background:#ddd;
+}
+
+.tab {
+  display:none;
+}
+
+.tab.active {
+  display:block;
+}
 
 /*********
 The following section is 
@@ -220,12 +220,12 @@ the same across most pages
 }
 
 .add-file {
-    clear: both;
-    margin-top:  100px;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    font-size: 20px;
+  clear: both;
+  margin-top:  100px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
 }
 
 .addnew-label {
@@ -321,12 +321,12 @@ the same across most pages
 *********/
 
 .member-names ul a{
-text-decoration:none;
+  text-decoration:none;
   color:#000;
 }
 
 .member-names ul{
-list-style-type:none;
+  list-style-type:none;
   padding:0px;
 }
 
@@ -385,26 +385,26 @@ list-style-type:none;
   background: -webkit-linear-gradient(#fff, #999);
   background: -o-linear-gradient(#fff, #999);
 
-.close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-  -moz-box-shadow: 1px 1px 3px #000;
-  -webkit-box-shadow: 1px 1px 3px #000;
-  box-shadow: 1px 1px 3px #000;
-}
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
 
-.close:hover { background: #00d9ff; }  
+  .close:hover { background: #00d9ff; }  
 }
 /* ==================== VIEW DOCUMENT CSS ==================== */
 
