@@ -15,6 +15,9 @@ body {
   background-color: #00BCD4;
 }
 
+.bar .bar-nav h1 {
+  color: white;
+}
 .icon-left-nav, .bar .btn-link {
   color: #77FF03;
 }
@@ -26,6 +29,8 @@ body {
   height: 30px;
   margin-bottom: 10px;
 }
+
+
 .nav .arrow{
   height: 30px;
   width: auto;
@@ -55,7 +60,7 @@ body {
 
 .tab-bar a {
   text-decoration: none;
-  color: #00;
+  color: #000000;
 }
 
 /*********
@@ -288,7 +293,7 @@ body{
 
 .nav h1{
   text-align: left;
-  color: #fff;
+  color: #000000;
   display: inline;
 }
 
