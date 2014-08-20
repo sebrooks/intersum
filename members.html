@@ -13,53 +13,65 @@
 
 
  <body>
-
-
   <div class="nav">
 
-    <a href="clubs.html"><img src="img/White Arrow.gif." class="arrow"></a>
-    <a href="#"><img src="img/Menu.jpg" class="menu"></a>
+    <header class="bar bar-nav">
+      <a href="clubs.html">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>
+        </button>
+      </a>
+      <a href="alerts.html">
+       <button class="btn btn-link btn-nav pull-right">
+        Create Alert
+        <span class="icon icon-sound"></span>
+      </button>
+
+    </a>
     <h1>GenTech</h1>
-    <a href="alerts.html"><p>Create Alert</p></a>
-  </div>
 
-  <div class="tab-bar">
-    <ul>
-      <a href="members.html"><li id="members">Members</li></a>
-      <a href="events.html"><li id="events">Events</li></a>
-      <a href="discussions-tab.html"><li id="discussions">Discussions</li></a>
-    </ul>
-  </div>
+  </header>
+</div>
 
-  <div class="member-names">
-    <ul>
-      <li>Sha-Asia Brooks</li>
-      <a href="member-profile.html"><li>John Doe</li></a>
-      <li>John Hocknell</li>
-      <li>Bruno Mars</li>
-      <li>Holly Nahar</li>
-      <li>Matthew Perez</li>
-      <li>Paola Ruiz</li>
-    </ul>
-  </div>
 
-  <a href="#openModal">
-    <div class="add-new">
-      <p class="add-new_text">Add New</p>
-      <p class="add-new_symbol">+</p>
-    </div>
-  </a>  
+
+<div class="tab-bar">
+  <ul>
+    <a href="members.html"><li id="members">Members</li></a>
+    <a href="events.html"><li id="events">Events</li></a>
+    <a href="discussions-tab.html"><li id="discussions">Discussions</li></a>
+  </ul>
+</div>
+
+<div class="member-names">
+  <ul>
+    <li>Sha-Asia Brooks</li>
+    <a href="member-profile.html"><li>John Doe</li></a>
+    <li>John Hocknell</li>
+    <li>Bruno Mars</li>
+    <li>Holly Nahar</li>
+    <li>Matthew Perez</li>
+    <li>Paola Ruiz</li>
+  </ul>
+</div>
+
+<a href="#openModal">
+  <div class="add-new">
+    <p class="add-new_text">Add New</p>
+    <p class="add-new_symbol">+</p>
+  </div>
+</a>  
 
 
 <div id="openModal" class="modalDialog">
   <div>
     <a href="#close" title="Close" class="close">X</a>
-            <form>
-                First Name: <input type="text" name="first-name"><br>
-                Last Name:  <input type="text" name="last-name"><br>
-                Email:      <input type="text" name="last-name"><br>
-                  <button>Add Member</button>
-            </form>
+    <form>
+      First Name: <input type="text" name="first-name"><br>
+      Last Name:  <input type="text" name="last-name"><br>
+      Email:      <input type="text" name="last-name"><br>
+      <button>Add Member</button>
+    </form>
   </div>
 
 </div>

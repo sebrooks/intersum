@@ -2,6 +2,8 @@
 /*********
 The following section is 
 the same across most pages
+
+RATCHET OVERRIDES
 *********/
 body{
   margin: 0px;
@@ -13,7 +15,7 @@ body{
   background-color: #00BCD4;
 }
 
-.icon-left-nav {
+.icon-left-nav, .bar .btn-link {
   color: #77FF03;
 }
 
@@ -479,4 +481,5 @@ body{
 The previous section is 
 the same across most pages
 *********/
+
 
