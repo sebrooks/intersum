@@ -47,16 +47,12 @@ body {
   display: inline;
 }
 
-.tab-bar{
-  margin: 5%;
-}
-
 .tab-bar li {
   display:inline;
   margin-left: -3px;
   border: 1px solid black;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
   font-size:25px;
 }
 
@@ -303,10 +299,6 @@ body{
   display: inline;
   background-color: white;
   margin-left: 25px
-}
-
-.bar-tab{
-  
 }
 
 .tab-bar li {
