@@ -222,6 +222,12 @@ body{
 The previous section is 
 the same across most pages
 *********/
+
+.summary {
+  margin-top: 55px;
+  margin-bottom:  55px;
+}
+
 .profile-img {
   clear: both;
   float: left;
@@ -240,7 +246,7 @@ the same across most pages
 .add-file {
   clear: both;
   margin-top:  100px;
-  background-color: black;
+  background-color: #00BCD4;
   color: white;
   padding: 15px;
   font-size: 20px;
@@ -381,10 +387,10 @@ the same across most pages
   background: rgba(0,0,0,0.8);
   z-index: 99999;
   opacity:0;
-  -webkit-transition: opacity 400ms ease-in;
+/*  -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
-  pointer-events: none;
+  */pointer-events: none;
 }
 
 .modalDialog:target {
