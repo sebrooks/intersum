@@ -1,9 +1,11 @@
 <html>
 <head>
-	 <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
- 
-	 <script type="text/javascript" src="JavaScript/jquery.js"></script>
-	 
+	<script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
+
+	<script type="text/javascript" src="JavaScript/jquery.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+	<link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<title>Members Profile</title>
 
@@ -27,18 +29,36 @@
 			<p><b>Age:</b> 16</p>
 		</div>
 	</div>
+
+	
 	<div class="add-file">
 		<div class="addnew-label">Add New</div>
 		<div class="addnew-symbol">+</div>
 	</div>
-	<div class="files">
-		<ul>
-			<a href="view-document.html"><li>Selfie</li></a>
-			<li>Attendance Log</li>
-			<li>Parental Consent</li>
-			<li>Media Release</li>
-		</ul>
-	</div>
+
+	<ul class="table-view">
+		<li class="table-view-cell">
+			<a class="navigate-right" href="view-document.html">
+				Selfie
+			</a>
+		</li>
+		<li class="table-view-cell">
+			<a class="navigate-right">
+				Attendance Log
+			</a>
+		</li>
+		<li class="table-view-cell">
+			<a class="navigate-right">
+				Parental Consent
+			</a>
+			<li class="table-view-cell">
+				<a class="navigate-right">
+					Media Release
+				</a>
+			</li>
+		</li>
+	</ul>
+
 
 </body>
 </html>
