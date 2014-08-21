@@ -1,43 +1,57 @@
 <html>
-<head>
- <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
- 
-  <script type="text/javascript" src="JavaScript/jquery.js"></script>
+  <head>
+    <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
 
-	<title>Club Discussions</title>
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script type="text/javascript" src="JavaScript/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <title>GenTech</title>
+  </head>
 
+	<body>
 
+	  <body>
+	    <div class="bar bar-nav">
+	      <header class="bar bar-nav">
+	        <a href="clubs.html">
+	        <button class="btn btn-link btn-nav pull-left">
+	          <span class="icon icon-left-nav"></span>&nbsp;
+	        </button>
+	        </a>
+	        <h1 class="title">GenTech</h1>
+	      </header>
+	    </div>
 
-</head>
+	    <div class="bar bar-tab bar-header-secondary">
+	        <a class="tab-item" href="members.html">
+	          Members
+	        </a>
+	        <a class="tab-item" href="events.html">
+	          Events
+	        </a>
+	        <a class="tab-item active" href="discussions-tab.html">
+	          Discussions
+	        </a>
+	    </div>
 
-<body>
+    <div>
+      <a href="#openModal" rel="modal:open">
+        <button class="btn btn-primary btn-block"><div class="pull-left">Add Discussion</div>
+          <span class="icon icon-plus pull-right"></span>
+        </button>
+      </a>
+    </div>
 
-	<div class="nav">
-		<a href="clubs.html"><img src="img/White Arrow.gif." class="arrow"></a>
-		<a href="#"><img src="img/Menu.jpg" class="menu"></a>
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <form>
+          Subject: <input type="text" name="discussion-subject"><br>
+          Text: <input type="text" name="discussion-text"><br>
+          <button>Add Discussion</button>
+        </form>
+    </div>
 
-		<h1>GenTech</h1>
-	</div>
-
-	<div class="tab-bar">
-		<ul>
-			<a href="members.html"><li id="members">Members</li></a>
-			<a href="events.html"><li id="events" >Events</li></a>
-			<a href="discusions-tab.html"><li id="discussions">Discussions</li></a>
-		</ul>
-	</div>
-
-	<div class="new">
-		<a href="create-discussion.html"<button>Create Discussion</button></a>
-	</div>
-
-
-	<div class="ongoing">
-
-	</div>
-
-
-
-</body>
+	</body>
 </html>
