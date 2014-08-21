@@ -5,6 +5,7 @@ the same across most pages
 
 RATCHET OVERRIDES
 *********/
+
 body {
   margin: 0px;
   padding: 0px;
@@ -374,6 +375,7 @@ the same across most pages
 .pop-up {
   background-color: black;
 }
+
 
 /**Modal (New Member)*/
 
