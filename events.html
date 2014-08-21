@@ -12,67 +12,90 @@
 
   <body>
 
+  <body>
     <div class="bar bar-nav">
       <header class="bar bar-nav">
+        <a href="clubs.html">
         <button class="btn btn-link btn-nav pull-left">
           <span class="icon icon-left-nav"></span>&nbsp;
         </button>
+        </a>
         <h1 class="title">GenTech</h1>
       </header>
     </div>
 
-    <div class="bar-tab">
-      <nav class="bar-tab">
-        <a class="tab-item" href="members.html">Members</a>
-        <a class="tab-item active" href="events.html">Events</a>
-        <a class="tab-item" href="discussions-tab.html">Dicussions</a>
-      </nav>
-    </div>  
+    <div class="bar bar-tab bar-header-secondary">
+        <a class="tab-item" href="members.html">
+          Members
+        </a>
+        <a class="tab-item active" href="events.html">
+          Events
+        </a>
+        <a class="tab-item" href="discussions-tab.html">
+          Discussions
+        </a>
+    </div>
 
-<ul class="table-view">
-  <li class="table-view-cell">
-    <a class="navigate-right">
-      Business Plan Deadline
-    </a>
-  </li>
-  <li class="table-view-cell">
-    <a class="navigate-right">
-      Startup Weekend
-    </a>
-  </li>
-  <li class="table-view-cell">
-    <a class="navigate-right">
-      Fred Talk
-    </a>
-      </li>
-  <li class="table-view-cell">
-    <a class="navigate-right">
-      End of Bootcamp!
-    </a>
-      </li>
-  <li class="table-view-cell">
-    <a class="navigate-right">
-      Color Run
-    </a>
-      </li>
-  <li class="table-view-cell">
-    <a class="navigate-right">
-      Aids Walk
-    </a>
-      </li>
-  <li class="table-view-cell">
-    <a class="navigate-right">
-      Mentoring Sessions
-    </a>
-  </li>
-</ul>
+    <div>
+      <ul class="table-view">
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Business Plan Deadline
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Startup Weekend
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Fred Talk
+          </a>
+            </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            End of Bootcamp!
+          </a>
+            </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Color Run
+          </a>
+            </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Aids Walk
+          </a>
+            </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Mentoring Sessions
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    <a href="add-new-event.html" rel="modal:open">
-      <div class="add-new">
-        <p class="add-new_text">Add New</p>
-        <p class="add-new_symbol">+</p>
-      </div>
-    </a>
+    <div>
+      <a href="#openModal" rel="modal:open">
+        <button class="btn btn-primary btn-block"><div class="pull-left">Add Event</div>
+          <span class="icon icon-plus pull-right"></span>
+        </button>
+      </a>
+    </div>
+
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <form>
+          Event Name: <input type="text" name="event-name"><br>
+          Event Location: <input type="text" name="event-location"><br>
+          Begins:  <input type="text" name="event-begins"><br>
+          Ends:      <input type="text" name="event-ends"><br>
+          Description: <input type="text" name="event-description"><br>
+          <button>Add Event</button>
+        </form>
+    </div>
 
   </body>
 </html>

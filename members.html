@@ -8,27 +8,21 @@
     <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <title>GenTech</title>
-
   </head>
 
   <body>
     <div class="bar bar-nav">
       <header class="bar bar-nav">
         <a href="clubs.html">
-          <button class="btn btn-link btn-nav pull-left">
-            <span class="icon icon-left-nav"></span>&nbsp;
-          </button>
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>&nbsp;
+        </button>
         </a>
+        <h1 class="title">GenTech</h1>
+      </header>
+    </div>
 
-        <a href="alerts.html">
-          <button class="btn btn-link btn-nav pull-right">
-            Create Alert
-            <span class="icon icon-sound"></span>
-          </button>
-
-        </a>
-        <h1>GenTech</h1>
-            <div class="bar bar-standard bar-header-secondary">
+    <div class="bar bar-tab bar-header-secondary">
         <a class="tab-item active" href="members.html">
           Members
         </a>
@@ -36,71 +30,57 @@
           Events
         </a>
         <a class="tab-item" href="discussions-tab.html">
-          Label
-        <h1 class="title">GenTech</h1>
-      </header>
-    </div>
-
-    <div class="bar bar-standard bar-header-secondary">
-        <a class="tab-item" href="#">
-          Members
-        </a>
-        <a class="tab-item active" href="#">
-          Events
-        </a>
-        <a class="tab-item" href="#">
           Discussions
-
         </a>
     </div>
 
-      </header>
+    <div>
+      <ul class="table-view">
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Sha-Asia Brooks
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a href="member-profile.html" class="navigate-right">
+            John Doe
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            John Hocknell
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Bruno Mars
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Holly Nahar
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Matthew Perez
+          </a>
+        </li>
+        <li class="table-view-cell">
+          <a class="navigate-right">
+            Paola Ruiz
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <ul class="table-view">
-      <li class="table-view-cell">
-        <a class="navigate-right">
-          Sha-Asia Brooks
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a href="member-profile.html" class="navigate-right">
-          John Doe
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a class="navigate-right">
-          John Hocknell
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a class="navigate-right">
-          Bruno Mars
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a class="navigate-right">
-          Holly Nahar
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a class="navigate-right">
-          Matthew Perez
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a class="navigate-right">
-          Paola Ruiz
-        </a>
-      </li>
-    </ul>
-
-    <a href="#openModal">
-      <button class="btn btn-primary">
-        <span class="icon icon-plus"></span>
-        Add New
-      </button>
-    </a>
+    <div>
+      <a href="#openModal" rel="modal:open">
+        <button class="btn btn-primary btn-block"><div class="pull-left">Add Member</div>
+          <span class="icon icon-plus pull-right"></span>
+        </button>
+      </a>
+    </div>
 
     <div id="openModal" class="modalDialog">
       <div>
@@ -111,10 +91,7 @@
           Email:      <input type="text" name="last-name"><br>
           <button>Add Member</button>
         </form>
-      </div>
-
     </div>
 
   </body>
-
 </html>

@@ -11,14 +11,30 @@ body {
   border: 0px;
 }
 
+.bar-header-secondary {
+  border: 0px;
+  background-color: #00BCD4;
+}
+
 .bar-nav {
   background-color: #00BCD4;
+  border: 0px;
 }
 
 .bar .bar-nav h1 {
   color: white;
 }
+
+.btn-block {
+  padding: 10px;
+  background-color: #00BCD4;
+}
+
 .icon-left-nav, .bar .btn-link {
+  color: #77FF03;
+}
+
+.icon-plus {
   color: #77FF03;
 }
 
