@@ -31,6 +31,10 @@ body {
   background-color: #00BCD4;
 }
 
+.btn-positive {
+  background-color: #77FF03;
+}
+
 .icon-left-nav, .bar .btn-link {
   color: #77FF03;
 }
