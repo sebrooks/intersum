@@ -11,6 +11,7 @@
 
 <body>
 
+	<!-- top navigation -->
 	<div class="bar bar-nav">
 		<header class="bar bar-nav">
 			<a href="clubs.html">
@@ -22,29 +23,32 @@
 		</header>
 	</div>
 
-	<div class="bar bar-tab bar-header-secondary">
-		<a class="tab-item" href="members.html">
+
+	<!-- Secondary buttons -->
+	<div class="bar bar-standard bar-header-secondary">
+		<a class="btn btn-positive" href="members.html">
 			Members
 		</a>
-		<a class="tab-item active" href="events.html">
+		<a class="btn btn-positive" href="events.html">
 			Events
 		</a>
-		<a class="tab-item" href="discussions-tab.html">
+		<a class="btn btn-positive" href="discussions-tab.html">
 			Discussions
 		</a>
 	</div>
 
 
-	<div class="testing">
+	<!-- the actual page content -->
+	<div class="content">
 		<a href="#openModal" rel="modal:open">
 			<button class="btn btn-primary btn-block"><div class="pull-left">Add Discussion</div>
 				<span class="icon icon-plus pull-right"></span>
 			</button>
 		</a>
-	</div>
+    
 
-	<div id="openModal" class="modalDialog">
-		<div>
+    <div id="openModal" class="modalDialog">
+    	<div>
 			<a href="#close" title="Close" class="close">X</a>
 			<form>
 				Subject: <input type="text" name="discussion-subject"><br>
@@ -52,6 +56,7 @@
 				<button>Add Discussion</button>
 			</form>
 		</div>
-
-	</body>
-	</html>
+	</div>
+</div>
+</body>
+</html>
