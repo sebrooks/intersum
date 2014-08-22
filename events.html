@@ -1,99 +1,103 @@
 <html>
-  
-  <head>
-    <script type="text/javascript" src="JavaScript/ratchet.min.js"></script>
-    <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
-    <script type="text/javascript" src="JavaScript/jquery.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
-    <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <title>GenTech</title>
-  </head>
 
-  <body>
-    <div class="bar bar-nav">
-      <header class="bar bar-nav">
-        <a href="clubs.html">
+<head>
+  <script type="text/javascript" src="JavaScript/ratchet.min.js"></script>
+  <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
+  <script type="text/javascript" src="JavaScript/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <title>GenTech</title>
+</head>
+
+<body>
+  <!-- top navigation -->
+  <div class="bar bar-nav">
+    <header class="bar bar-nav">
+      <a href="clubs.html">
         <button class="btn btn-link btn-nav pull-left">
           <span class="icon icon-left-nav"></span>&nbsp;
         </button>
-        </a>
-        <h1 class="title">GenTech</h1>
-      </header>
-    </div>
-
-    <div class="bar bar-tab bar-header-secondary">
-        <a class="tab-item" href="members.html">
-          Members
-        </a>
-        <a class="tab-item active" href="events.html">
-          Events
-        </a>
-        <a class="tab-item" href="discussions-tab.html">
-          Discussions
-        </a>
-    </div>
-
-    <div>
-      <ul class="table-view">
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Business Plan Deadline
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Startup Weekend
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Fred Talk
-          </a>
-            </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            End of Bootcamp!
-          </a>
-            </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Color Run
-          </a>
-            </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Aids Walk
-          </a>
-            </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Mentoring Sessions
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <a href="#openModal" rel="modal:open">
-        <button class="btn btn-primary btn-block"><div class="pull-left">Add Event</div>
-          <span class="icon icon-plus pull-right"></span>
-        </button>
       </a>
-    </div>
+      <h1 class="title">GenTech</h1>
+    </header>
+  </div>
 
-    <div id="openModal" class="modalDialog">
-      <div>
-        <a href="#close" title="Close" class="close">X</a>
-        <form>
-          Event Name: <input type="text" name="event-name"><br>
-          Event Location: <input type="text" name="event-location"><br>
-          Begins:  <input type="text" name="event-begins"><br>
-          Ends:      <input type="text" name="event-ends"><br>
-          Description: <input type="text" name="event-description"><br>
-          <button>Add Event</button>
-        </form>
-    </div>
+  <!-- Secondary buttons -->
+  <div class="bar bar-standard bar-header-secondary">
+    <a class="btn btn-positive" href="members.html">
+      Members
+    </a>
+    <a class="btn btn-positive" href="events.html">
+      Events
+    </a>
+    <a class="btn btn-positive" href="discussions-tab.html">
+      Discussions
+    </a>
+  </div>
 
+  <!-- the actual page content -->
+  <div class="content">
+    <ul class="table-view">
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Business Plan Deadline
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Startup Weekend
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Fred Talk
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          End of Bootcamp!
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Color Run
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Aids Walk
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Mentoring Sessions
+        </a>
+      </li>
+    </ul>
+
+
+  <div>
+    <a href="#openModal" rel="modal:open">
+      <button class="btn btn-primary btn-block"><div class="pull-left">Add Event</div>
+        <span class="icon icon-plus pull-right"></span>
+      </button>
+    </a>
+  </div>
+
+  <div id="openModal" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <form>
+        Event Name: <input type="text" name="event-name"><br>
+        Event Location: <input type="text" name="event-location"><br>
+        Begins:  <input type="text" name="event-begins"><br>
+        Ends:      <input type="text" name="event-ends"><br>
+        Description: <input type="text" name="event-description"><br>
+        <button>Add Event</button>
+      </form>
+    </div>
+    </div>
+    
   </body>
-</html>
+  </html>
