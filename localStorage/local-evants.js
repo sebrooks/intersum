@@ -16,9 +16,9 @@ $(document).ready(function(){
 		eventContents.addClass("navigate-right");
 		eventItem.html(eventContents);
 		eventContents.html(localStorage.newEventName);
-		$("li.table-view-cell:last").after(eventItem);
+		$("li.table-view-cell:first").before(eventItem);
 		$("#openModal").hide()
 	});
-	
+
 
 });
