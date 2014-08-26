@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <title>Log In / Sign Up</title>
+  <script type="text/javascript" src="localStorage/local-login.js"></script>
 
 </head>
 <body>
@@ -32,9 +33,9 @@
     <div id="tab1" class="tab active">
       <p>Log In</p>
       <form action="demo_form.asp" autocomplete="on">
-       User name:<input type="text" name="username"><br>
-       Password: <input type="text" name="password"><br>
-       <input type="submit" value="Submit">
+       User name:<input id="existing-username" type="text" name="username"><br>
+       Password: <input id="existing-password" type="text" name="password"><br>
+       <input id="existing-user-login" type="button" value="Submit">
      </form>
     </div>
   </div>

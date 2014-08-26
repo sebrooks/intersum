@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <title>Log In / Sign Up</title>
+  <script type="text/javascript" src="localStorage/local-signup.js"></script>
 </head>
 <body>
 
@@ -29,17 +30,16 @@
 
   <!-- Actual Page Content -->
   <div class="content">
-  <p>Sign Up</p>
+    <p>Sign Up</p>
 
+    <form autocomplete="on">
+     User name:<input id="create-username" type="text" name="username"><br>
+     Password: <input id="create-password" type="text" name="password"><br>
+     E-mail: <input id="create-email" type="email" name="email" autocomplete="on"><br>
+     <input id="create-user-login" type="button" value="Sign Up!">
+   </form>
 
-  <form action="" autocomplete="on">
-   User name:<input type="text" name="username"><br>
-   Password: <input type="text" name="password"><br>
-   E-mail: <input class="email" type="email" name="email" autocomplete="on"><br>
-   <input type="submit" value="Sign Up!">
- </form>
-
-</div>
+ </div>
 
 </body>
 </html>
