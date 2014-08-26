@@ -1,10 +1,5 @@
 $(document).ready(function(){
-/*
-	var existingUsername = $("#existing-username").val();
-	var existingPassword = $("#existing-password").val();
 
-if(existingUsername&&existingPassword){
-*/
 	$("#existing-user-login").click(function(){
 
 	localStorage.existingUsername = $("#existing-username").val();
@@ -12,10 +7,5 @@ if(existingUsername&&existingPassword){
 
 	location.assign("clubs.html");		
 	})
-/*
-}
-else{
-	alert("Missing input feild!")
-}
-*/
+
 });
