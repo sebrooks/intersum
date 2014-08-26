@@ -1,46 +1,44 @@
-
 <html>
 <head>
- <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
- 
+  <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
   <script type="text/javascript" src="JavaScript/jquery.js"></script>
-  
-  <title>Log In / Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <title>Log In / Sign Up</title>
 
 </head>
 <body>
 
-  <div class="nav">
-
-    <h1>INTERSUM</h1>
-
+  <!-- top navigation -->
+  <div class="bar bar-nav">
+    <header class="bar bar-nav">
+      <h1 class="title">INTERSUM</h1>
+    </header>
   </div>
 
-  <div class="tabs">
-    <ul class="tab-links">
-      <a href="Index.html"><li class="active">Log In</li></a>
-      <a href="Sign-Up.html"><li>Sign Up</li></a>
+  <!-- Secondary buttons -->
+  <div class="bar bar-standard bar-header-secondary">
+    <a class="btn btn-positive" href="Index.html">
+      Log In
+    </a>
+    <a class="btn btn-positive" href="Sign-Up.html">
+      Sign-Up
+    </a>
+  </div>
 
-    </ul>
-    
-    <div class="tab-content">
-      <div id="tab1" class="tab active">
-        <p>Log In</p>
-
-        <form action="demo_form.asp" autocomplete="on">
-         User name:<input type="text" name="username"><br>
-         Password: <input type="text" name="password"><br>
-         <input type="submit" value="Submit">
-       </form>
-
-     </div>
-     
-     <div id="tab2" class="tab">
-      <p>Sign Up</p>
+  <!-- Actual Page Content -->
+  <div class="content">
+    <div id="tab1" class="tab active">
+      <p>Log In</p>
+      <form action="demo_form.asp" autocomplete="on">
+       User name:<input type="text" name="username"><br>
+       Password: <input type="text" name="password"><br>
+       <input type="submit" value="Submit">
+     </form>
     </div>
   </div>
-</div>
+
 
 <div class="box"><a href="clubs.html">box</a></div>
 </body>
