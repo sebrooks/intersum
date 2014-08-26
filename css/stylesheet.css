@@ -57,13 +57,14 @@ body {
   border: 0px;
 }
 
+
 .btn-block {
   padding: 10px;
-  background-color: #00BCD4;
+  background-color: #0097a7;
 }
 
 .btn-positive {
-  background-color: #77FF03;
+  background-color: #0097a7;
 }
 
 .document img{
@@ -296,7 +297,7 @@ ul {
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #fff;
+  background: #;
   background: -moz-linear-gradient(#fff, #999);
   background: -webkit-linear-gradient(#fff, #999);
   background: -o-linear-gradient(#fff, #999);

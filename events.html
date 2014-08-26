@@ -1,106 +1,106 @@
 <html>
 
-  <head>
-    <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
-    <script type="text/javascript" src="JavaScript/jquery.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
-    <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <title>GenTech</title>
-  </head>
+<head>
+  <script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
+  <script type="text/javascript" src="JavaScript/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <title>Golf</title>
+</head>
 
-  <body>
+<body>
 
 
-    <!-- top navigation -->
-    <div class="bar bar-nav">
-      <header class="bar bar-nav">
-        <a href="clubs.html">
-          <button class="btn btn-link btn-nav pull-left">
-            <span class="icon icon-left-nav"></span>&nbsp;
-          </button>
+  <!-- top navigation -->
+  <div class="bar bar-nav">
+    <header class="bar bar-nav">
+      <a href="clubs.html">
+        <button class="btn btn-link btn-nav pull-left">
+          <span class="icon icon-left-nav"></span>&nbsp;
+        </button>
+      </a>
+      <h1 class="title">Golf</h1>
+    </header>
+  </div>
+
+  <!-- Secondary buttons -->
+  <div class="bar bar-standard bar-header-secondary">
+    <a class="btn btn-positive" href="members.html">
+      Members
+    </a>
+    <a class="btn btn-positive" href="events.html">
+      Events
+    </a>
+    <a class="btn btn-positive" href="discussions-tab.html">
+      Discussions
+    </a>
+  </div>
+
+
+
+  <!-- the actual page content -->
+  <div class="content">
+    <ul class="table-view">
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Meet Up
         </a>
-        <h1 class="title">GenTech</h1>
-      </header>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Practice
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Home Game 
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          End of year meeting!
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Fundraiser
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          Aids Walk
+        </a>
+      </li>
+      <li class="table-view-cell">
+        <a class="navigate-right">
+          First Game of the Year
+        </a>
+      </li>
+    </ul>
+
+
+    <div>
+      <a href="#openModal" rel="modal:open">
+        <button class="btn btn-primary btn-block"><div class="pull-left">Add Event</div>
+          <span class="icon icon-plus pull-right"></span>
+        </button>
+      </a>
     </div>
 
-    <!-- Secondary buttons -->
-    <div class="bar bar-standard bar-header-secondary">
-      <a class="btn btn-positive" href="members.html">
-        Members
-      </a>
-      <a class="btn btn-positive" href="events.html">
-        Events
-      </a>
-      <a class="btn btn-positive" href="discussions-tab.html">
-        Discussions
-      </a>
-    </div>
-
-
-
-    <!-- the actual page content -->
-    <div class="content">
-      <ul class="table-view">
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Business Plan Deadline
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Startup Weekend
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Fred Talk
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            End of Bootcamp!
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Color Run
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Aids Walk
-          </a>
-        </li>
-        <li class="table-view-cell">
-          <a class="navigate-right">
-            Mentoring Sessions
-          </a>
-        </li>
-      </ul>
-
-
+    <div id="openModal" class="modalDialog">
       <div>
-        <a href="#openModal" rel="modal:open">
-          <button class="btn btn-primary btn-block"><div class="pull-left">Add Event</div>
-            <span class="icon icon-plus pull-right"></span>
-          </button>
-        </a>
+        <a href="#close" title="Close" class="close">X</a>
+        <form>
+          Event Name: <input id="create-event-name" type="text" name="event-name"><br>
+          Event Location: <input id="create-event-location" type="text" name="event-location"><br>
+          Begins:  <input id="create-event-start-time" type="text" name="event-begins"><br>
+          Ends:      <input id="create-event-end-time" type="text" name="event-ends"><br>
+          Description: <input id="create-event-details" type="text" name="event-description"><br>
+          <input id="create-event-submit" type="button" value="Add Event">
+        </form>
       </div>
+    </div>
 
-      <div id="openModal" class="modalDialog">
-        <div>
-          <a href="#close" title="Close" class="close">X</a>
-          <form>
-            Event Name: <input id="create-event-name" type="text" name="event-name"><br>
-            Event Location: <input id="create-event-location" type="text" name="event-location"><br>
-            Begins:  <input id="create-event-start-time" type="text" name="event-begins"><br>
-            Ends:      <input id="create-event-end-time" type="text" name="event-ends"><br>
-            Description: <input id="create-event-details" type="text" name="event-description"><br>
-            <input id="create-event-submit" type="button" value="Add Event">
-          </form>
-        </div>
-      </div>
-      
-    </body>
+  </body>
   </html>
