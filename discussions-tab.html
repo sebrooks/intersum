@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<script type="text/javascript" src="localStorage/local-discussion.js"></script>
 	<title>GenTech</title>
 </head>
 
@@ -46,14 +47,16 @@
 			</button>
 		</a>
 
+		<ul class="table-view">
+		</ul>
 
 		<div id="openModal" class="modalDialog">
 			<div>
 				<a href="#close" title="Close" class="close">X</a>
 				<form>
-					Subject: <input type="text" name="discussion-subject"><br>
-					Text: <input type="text" name="discussion-text"><br>
-					<input id="" type="submit" value="Add Discussion">
+					Subject: <input id="begin-new-disscusion-topic" type="text" name="discussion-subject"><br>
+					Text: <input id="begin-new-disscusion-text" type="text" name="discussion-text"><br>
+					<input id="post-new-disscusion-button" type="button" value="Add Discussion">
 				</form>
 			</div>
 		</div>

@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
   <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <script type="text/javascript" src="localstorage/local-evants.js"></script>
   <title>GenTech</title>
 </head>
 
@@ -90,12 +91,12 @@
       <div>
         <a href="#close" title="Close" class="close">X</a>
         <form>
-          Event Name: <input type="text" name="event-name"><br>
-          Event Location: <input type="text" name="event-location"><br>
-          Begins:  <input type="text" name="event-begins"><br>
-          Ends:      <input type="text" name="event-ends"><br>
-          Description: <input type="text" name="event-description"><br>
-          <input id="" type="submit" value="Add Event">
+          Event Name: <input id="create-event-name" type="text" name="event-name"><br>
+          Event Location: <input id="create-event-location" type="text" name="event-location"><br>
+          Begins:  <input id="create-event-start-time" type="text" name="event-begins"><br>
+          Ends:      <input id="create-event-end-time" type="text" name="event-ends"><br>
+          Description: <input id="create-event-details" type="text" name="event-description"><br>
+          <input id="create-event-submit" type="button" value="Add Event">
         </form>
       </div>
     </div>
