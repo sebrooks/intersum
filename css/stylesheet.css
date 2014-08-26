@@ -297,11 +297,11 @@ ul {
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #;
+  background: #0097a7;
   background: -moz-linear-gradient(#fff, #999);
   background: -webkit-linear-gradient(#fff, #999);
   background: -o-linear-gradient(#fff, #999);
-
+}
   .close {
     background: #606061;
     color: #FFFFFF;
@@ -321,6 +321,12 @@ ul {
     box-shadow: 1px 1px 3px #000;
   }
 
-  .close:hover { background: #00d9ff; }  
-}
+  #submit-new-member {
+    background-color: #0097a7;
+    color: white;
+  }
+
+  .close:hover { 
+    background: #00d9ff; 
+  }  
 /* End of modals */
