@@ -11,8 +11,6 @@
 </head>
 
 <body>
-
-
   <!-- top navigation -->
   <div class="bar bar-nav">
     <header class="bar bar-nav">
@@ -27,21 +25,31 @@
 
   <!-- Secondary buttons -->
   <div class="bar bar-standard bar-header-secondary">
-    <a class="btn btn-positive" href="members.html">
-      Members
+    <a class="btn btn-positive" href="discussions-tab.html">
+      Discussions
     </a>
     <a class="btn btn-positive" href="events.html">
       Events
     </a>
-    <a class="btn btn-positive" href="discussions-tab.html">
-      Discussions
+    <a class="btn btn-positive" href="members.html">
+      Members
     </a>
   </div>
 
 
 
+
   <!-- the actual page content -->
   <div class="content">
+
+    <div>
+      <a href="#openModal" rel="modal:open">
+        <button class="btn btn-primary btn-block"><div class="pull-left">Add Event</div>
+          <span class="icon icon-plus pull-right"></span>
+        </button>
+      </a>
+    </div>
+
     <ul class="table-view">
       <li class="table-view-cell">
         <a class="navigate-right">
@@ -80,14 +88,6 @@
       </li>
     </ul>
 
-
-    <div>
-      <a href="#openModal" rel="modal:open">
-        <button class="btn btn-primary btn-block"><div class="pull-left">Add Event</div>
-          <span class="icon icon-plus pull-right"></span>
-        </button>
-      </a>
-    </div>
 
     <div id="openModal" class="modalDialog">
       <div>

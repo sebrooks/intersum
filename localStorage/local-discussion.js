@@ -23,6 +23,7 @@ $(document).ready(function(){
 		$("ul.table-view").html(discussionItem);
 
 
+		$("div#openModal").fadeOut( "slow" );
 
 
 	});

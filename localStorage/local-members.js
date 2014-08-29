@@ -17,6 +17,9 @@ $(document).ready(function(){
 		memberContents.html(localStorage.memberFirst);
 		$("li.table-view-cell:last").after(memberItem);
 
+
+		$("div#openModal").fadeOut( "slow" );
+
 	});
 
 });
