@@ -3,8 +3,8 @@ $(document).ready(function(){
 	var eventItem = $("<li>")
 	var eventContents = $("<a>")
 	
-
 	$("#create-event-submit").click(function(){
+
 
 		localStorage.newEventName = $("#create-event-name").val();
 		localStorage.newEventLocation = $("#create-event-location").val();
@@ -17,7 +17,10 @@ $(document).ready(function(){
 		eventItem.html(eventContents);
 		eventContents.html(localStorage.newEventName);
 		$("li.table-view-cell:first").before(eventItem);
-		$("#openModal").hide()
+
+
+		$("div#openModal").fadeOut( "slow" );
+
 	});
 
 

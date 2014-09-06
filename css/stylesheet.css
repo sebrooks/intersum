@@ -39,6 +39,7 @@ RATCHET OVERRIDES
 
 .bar .bar-nav h1 {
   color: white;
+  text-align: center;
 }
 
 .bar-nav img {
