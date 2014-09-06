@@ -17,7 +17,7 @@ $(document).ready(function(){
 		discussionContents.addClass("navigate-right");
 		discussionItem.html(discussionContents);
 		discussionContents.html(localStorage.discussionTitle);
-		$("ul.table-view:first").before(discussionItem);
+		$("li.table-view-cell:first").before(discussionItem);
 
 		$("div#openModal").fadeOut("slow");
 

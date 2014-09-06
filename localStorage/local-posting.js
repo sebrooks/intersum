@@ -14,6 +14,8 @@ $(document).ready(function(){
 		postContents.html(localStorage.postText);
 		$("li.table-view-cell:last").after(postItem);
 
+		$("div#openModal").fadeOut("slow");
+
 	});
 
 
