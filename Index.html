@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <title>Splash Page</title>
-<script type="text/javascript" src="JavaScript/splashPage.js"></script>
+  <script type="text/javascript" src="JavaScript/splashPage.js"></script>
 
 </head>
 
@@ -27,19 +27,42 @@ ASIGN LOCATION = login.htlm
 -->
 
 <body>
-  <a id="splash" href="login.html">
-    <!-- top navigation -->
+
+
+
+  <!-- top navigation -->
   <div class="bar bar-nav">
     <header class="bar bar-nav">
       <h1 class="title">INTERSUM</h1>
-    </header>
+    </header> 
+  </div>
+
+  <!--Secondary buttons-->
+  <div class="bar bar-standard bar-header-secondary">
+    <a class="btn btn-positive" href="Index.html">
+      Log In
+    </a>
+    <a class="btn btn-positive" href="Sign-Up.html">
+      Sign-Up
+    </a>
   </div>
 
     <!-- actual page content -->
   <div class="document">
     <img src="img/Logo(middleGround).png">
+
+  <!--Actual Page Content-->
+  <div class="content">
+    <div id="tab1" class="tab active">
+      <p>Log In</p>
+      <form action="demo_form.asp" autocomplete="on">
+       User name:<input id="existing-username" type="text" name="username"><br>
+       Password: <input id="existing-password" type="text" name="password"><br>
+       <a href="discussions-tab.html">
+        <input id="existing-user-login" type="button" value="Submit">
+      </a> 
+    </form>
   </div>
-  </a>
 
 </body>
 </html>
