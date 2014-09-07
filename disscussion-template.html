@@ -5,24 +5,20 @@
   <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
   <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <title>Clubs</title>
-  <script type="text/javascript" src="localStorage/local-club.js"></script>
-<style type="text/css">
-</style>
-
+  <title>Events</title>
+  <script type="text/javascript" src="localStorage/local-posting.js"></script>
 </head>
-
 <body>
 
   <!-- top navigation -->
   <div class="bar bar-nav">
     <header class="bar bar-nav">
-      <a href="login.html">
+      <a href="discussions-tab.html">
         <button class="btn btn-link btn-nav pull-left">
           <span class="icon icon-left-nav"></span>&nbsp;
         </button>
       </a>
-      <h1 class="title">Clubs</h1>
+      <h1 class="title">GenTech</h1>
     </header>
   </div>
 
@@ -30,47 +26,40 @@
   <!-- the actual page content -->
   <div class="content">
 
-<h3 id="user-greet" style="text-align:center;"">Greetings</h3>
 
+    <h2>Topic</h2>
+    <h3 id="discussion">
+
+    </h3>
+
+<form>
+<input id="post-responce" type="text"></input>
+<input id="post-submit" type="button" value="POST"></input>
+</form>
+  
     <ul class="table-view">
       <li class="table-view-cell">
-        <a href="discussions-tab.html"class="navigate-right">
-          Golf
+        <a class="navigate-right">
+          Text
         </a>
       </li>
+    
       <li class="table-view-cell">
         <a class="navigate-right">
-          Key Club
+          Text
         </a>
       </li>
+    
       <li class="table-view-cell">
         <a class="navigate-right">
-          Tennis
+          Text
         </a>
       </li>
+
     </ul>
-
-
-    <div>
-      <a href="#openModal" rel="modal:open">
-        <button class="btn btn-primary btn-block"><div class="pull-left">Add Club</div>
-          <span class="icon icon-plus pull-right"></span>
-        </button>
-      </a>
-    </div>
-
-    <div id="openModal" class="modalDialog">
-      <div>
-        <a href="#close" title="Close" class="close">X</a>
-
-        <form>
-          Group Name: <input id="create-group-name" type="text" name="group-name"><br>
-          <input id="create-group-submit" type="button" value="Add Group">
-        </form>
-      </div>
-    </div>
-
-
   </div>
+
+
+
 </body>
 </html>

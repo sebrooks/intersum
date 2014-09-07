@@ -9,27 +9,30 @@ $(document).ready(function(){
 
 		if (username && password) {
 
-			Parse.User.logIn( username, password ){
-				success:(function)
-			}
-			
+			localStorage.username = $("#existing-username").val();
+			Parse.User.logIn( username, password)
+
 			location.assign("clubs.html");	
-
 		}
-  /*      success: function(user) {  
-          console.log("User signed up!");
-        },
 
+	});
+
+
+});
+
+  /*      
+				
+		  success: function(user) {  
+        },
         error: function(error) {
           console.log("Error!");
         }
+			}		
         
 		};
 		else{
 			alert("Error: Missing input feild!")
 		}
 		*/
-	});
 
 //last
-});

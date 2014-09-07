@@ -29,35 +29,52 @@
 				<div class="profile-img">
 					<img src="img/Bruno.jpg">
 				</div>
+
 				<div class="profile-summary">
 					<p><b>Member:</b> Bruno Mars</p>
-					<p><b>Age:</b> 16</p>
+					<p><b>Age:</b> 28</p>
+					<p><b>Email:</b> bruno.m.gmail@.com </p>
 				</div>
 			</div>
 
-
-			<div class="add-file">
-				<div class="addnew-label">Add File</div>
-				<div class="addnew-symbol">+</div>
+			<div>
+				<a href="#openModal" rel="modal:open">
+					<button class="btn btn-primary btn-block">
+						<div class="addnew-label">Add File</div>
+						<div class="addnew-symbol">+</div>
+					</button>
+				</a>
 			</div>
 
 			<ul class="table-view">
 				<li class="table-view-cell">
-					<a class="navigate-right" href="view-document.html">
+					<a class="navigate-right" href="attendance-example.html">
 						Attendance Log
 					</a>
 				</li>
 				<li class="table-view-cell">
-					<a class="navigate-right">
-						Parental Consent
+					<a class="navigate-right" href="scores-example.html">
+						Game Scores
 					</a>
 					<li class="table-view-cell">
-						<a class="navigate-right">
+						<a class="navigate-right" href="media-example.html">
 							Media Release
 						</a>
 					</li>
 				</li>
 			</ul>
+		</div>
+
+		<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<form>
+					File Name: <input id="new-file-name" type="text" name="first-name"><br>
+					File: <input id="new-file-img" type="file" name="pic" accept="image/*">>
+
+					<input id="submit-new-file" type="button" value="Add File">
+				</form>
+			</div>
 		</div>
 
 	</body>
