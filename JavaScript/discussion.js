@@ -17,27 +17,27 @@ $(document).ready(function(){
 	});
 
 	function loadContentFromParse(){
-	var query = new Parse.Query("Discussions")
-	query.equalTo('groupID', 'TtQYY23CHY')
-	query.find({
-		success: function(objects) {
-			for (i=0; i<objects.length; i++) {
+          var query = new Parse.Query("Discussions")
+          query.equalTo('groupID', 'TtQYY23CHY')
+          query.find({
+                  success: function(objects) {
+                          for (i=0; i<objects.length; i++) {
 
-				var discussionTopic = objects[i].get("Topic");
-				var discussionItem = $("<li>")
-				var discussionContents = $("<a>")
+                                  var discussionTopic = objects[i].get("Topic");
+                                  var discussionItem = $("<li>")
+                                  var discussionContents = $("<a>")
 
-				discussionItem.addClass("table-view-cell");
-				discussionContents.addClass("navigate-right");
-				discussionContents.attr("href","disscussion-template.html")
-				discussionItem.html(discussionContents);
-				discussionContents.html(discussionTopic);
-				$("li.table-view-cell:first").before(discussionItem);
-			}
-		},
-		error: function(error) {
-			console.log("Error: " + error.code + " " + error.message);
-		}
+                                  discussionItem.addClass("table-view-cell");
+                                  discussionContents.addClass("navigate-right");
+                                  discussionContents.attr("href","disscussion-template.html")
+                                  discussionItem.html(discussionContents);
+                                  discussionContents.html(discussionTopic);
+                                  $("li.table-view-cell:first").before(discussionItem);
+                          }
+                  },
+                  error: function(error) {
+                          console.log("Error: " + error.code + " " + error.message);
+                  }
 	});
 
 	}
