@@ -13,6 +13,7 @@ $(document).ready(function(){
 
 				discussionItem.addClass("table-view-cell");
 				discussionContents.addClass("navigate-right");
+				discussionContents.attr("href","disscussion-template.html")
 				discussionItem.html(discussionContents);
 				discussionContents.html(discussionTopic);
 				$("li.table-view-cell:first").before(discussionItem);
