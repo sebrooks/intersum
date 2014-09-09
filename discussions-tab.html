@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<script type="text/javascript" src="localStorage/local-discussion.js"></script>
+	<script type="text/javascript" src="JavaScript/discussion.js"></script>
 	<title>GenTech</title>
 </head>
 
@@ -48,41 +48,48 @@
 		</a>
 
 		<ul class="table-view">
-			
+
 			<li class="table-view-cell">
 				<a href="disscussion-template.html" class="navigate-right">
 					When is practice?
 				</a>
 			</li>
+<!--
 			<li class="table-view-cell">
 				<a href="disscussion-template.html" class="navigate-right">
 					Suply costs
 				</a>
 			</li>
+
 			<li class="table-view-cell">
 				<a href="disscussion-template.html" class="navigate-right">
 					Game score 
 				</a>
 			</li>
+			
 			<li class="table-view-cell">
 				<a href="disscussion-template.html" class="navigate-right">
 					Team ranking
 				</a>
 			</li>
+			
 			<li class="table-view-cell">
 				<a href="disscussion-template.html" class="navigate-right">
 					Play offs
 				</a>
 			</li>
+-->
+
+
 		</ul>
 
 		<div id="openModal" class="modalDialog">
 			<div>
 				<a href="#close" title="Close" class="close">X</a>
 				<form>
-					Subject: <input id="begin-new-disscusion-topic" type="text" name="discussion-subject"><br>
-					Text: <input id="begin-new-disscusion-text" type="text" name="discussion-text"><br>
-					<input id="post-new-disscusion-button" type="button" value="Add Discussion">
+					Subject: <input id="new-disscusion-topic" type="text" name="discussion-subject"><br>
+					Text: <input id="new-disscusion-text" type="text" name="discussion-text"><br>
+					<input id="new-disscusion-button" type="button" value="Add Discussion">
 				</form>
 			</div>
 		</div>
