@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <title>Golf</title>
+  <script type="text/javascript" src="JavaScript/events.js"></script>
 </head>
 
 <body>
@@ -36,9 +37,6 @@
     </a>
   </div>
 
-
-
-
   <!-- the actual page content -->
   <div class="content">
 
@@ -51,54 +49,24 @@
     </div>
 
     <ul class="table-view">
-      <li class="table-view-cell">
-        <a href="Event-Template.html" class="navigate-right">
-          Meet Up
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a href="Event-Template.html" class="navigate-right">
-          Practice
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a href="Event-Template.html" class="navigate-right">
-          Home Game 
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a href="Event-Template.html" class="navigate-right">
-          End of year meeting!
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a href="Event-Template.html" class="navigate-right">
-          Fundraiser
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a href="Event-Template.html" class="navigate-right">
-          Aids Walk
-        </a>
-      </li>
-      <li class="table-view-cell">
-        <a href="Event-Template.html" class="navigate-right">
-          First Game of the Year
-        </a>
-      </li>
-    </ul>
 
+      <li class="table-view-cell">
+        <a href="Event-Template.html" class="navigate-right">
+        </a>
+      </li>
+
+    </ul>
 
     <div id="openModal" class="modalDialog">
       <div>
         <a href="#close" title="Close" class="close">X</a>
         <form>
-          Event Name: <input id="create-event-name" type="text" name="event-name"><br>
-          Date: <input id="create-event-date" type="text" name="event-date"><br>
-          Event Location: <input id="create-event-location" type="text" name="event-location"><br>
-          Begins:  <input id="create-event-start-time" type="text" name="event-begins"><br>
-          Ends:      <input id="create-event-end-time" type="text" name="event-ends"><br>
-          Description: <input id="create-event-details" type="text" name="event-description"><br>
+          Event Name:<input id="event-name" type="text" name="event-name"><br>
+          Date:<input id="event-date" type="text" name="event-date"><br>
+          Event Location:<input id="event-location" type="text" name="event-location"><br>
+          Begins:<input id="event-start" type="text" name="event-begins"><br>
+          Ends:<input id="event-end" type="text" name="event-ends"><br>
+          Description:<input id="event-details" type="text" name="event-description"><br>
           <input id="create-event-submit" type="button" value="Add Event">
         </form>
       </div>
