@@ -13,9 +13,9 @@ function gup( name ){
     return results[1];
 }
 
-var disscusionID = gup( 'id' );
+var htmlID = gup('id');
 
-console.log(disscusionID)
+console.log(htmlID)
 
 
 	var Post = Parse.Object.extend("Post");
@@ -25,18 +25,18 @@ console.log(disscusionID)
 		var text = $("#post-responce").val();
 
 		post.set("text", text);
-		post.set("disscusionID", disscusionID);
+		post.set("disscusionID", htmlID);
 		post.save();
 	});
 
 	function loadContentFromParse(){
 		var query = new Parse.Query("Post")
-		query.equalTo('disscusionID', disscusionID)
+		query.equalTo('disscusionID', htmlID)
 		query.find({
 			success: function(objects) {
 				for (i=0; i<objects.length; i++) {
 
-					var postTopic = objects[i].get("Topic");
+					var postTopic = objects[i].get("text");
 					var postItem = $("<li>")
 					var postContents = $("<a>")
 					

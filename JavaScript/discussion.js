@@ -23,13 +23,14 @@ $(document).ready(function(){
 				for (i=0; i<objects.length; i++) {
 
 					var discussionTopic = objects[i].get("Topic");
+					var discussionID = objects[i].id
 					var discussionItem = $("<li>")
 					var discussionContents = $("<a>")					
 
 					discussionItem.addClass("table-view-cell");
 					discussionContents.addClass("navigate-right");
-					discussionItem.attr("id", objects[i].id );
-					discussionContents.attr("href","disscussion-template.html?id=" + objects[i].id );
+					discussionItem.attr("id", discussionID );
+					discussionContents.attr("href","disscussion-template.html?id=" + discussionID );
 					discussionItem.html(discussionContents);
 					discussionContents.html(discussionTopic);
 					$("li.table-view-cell:first").after(discussionItem);
