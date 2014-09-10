@@ -24,7 +24,7 @@ console.log(disscusionID)
 	$("#post-submit").click(function(){
 		var text = $("#post-responce").val();
 
-		post.set("Description", text);
+		post.set("text", text);
 		post.set("disscusionID", disscusionID);
 		post.save();
 	});
