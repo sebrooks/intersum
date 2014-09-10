@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 					eventItem.addClass("table-view-cell");
 					eventContents.addClass("navigate-right");
-					eventContents.attr("href","Event-Template.html")
+					eventContents.attr("href","Event-Template.html?id=" + objects[i].id)
 					eventItem.html(eventContents);
 					eventContents.html(eventTopic);
 					$("li.table-view-cell:first").before(eventItem);

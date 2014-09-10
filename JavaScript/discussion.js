@@ -28,8 +28,8 @@ $(document).ready(function(){
 
 					discussionItem.addClass("table-view-cell");
 					discussionContents.addClass("navigate-right");
-					discussionItem.attr("id", objects[i].get("objectId") );
-					discussionContents.attr("href","disscussion-template.html?id=" + objects[i].get("objectId") );
+					discussionItem.attr("id", objects[i].id );
+					discussionContents.attr("href","disscussion-template.html?id=" + objects[i].id );
 					discussionItem.html(discussionContents);
 					discussionContents.html(discussionTopic);
 					$("li.table-view-cell:first").after(discussionItem);
@@ -44,5 +44,3 @@ $(document).ready(function(){
 
 
 });
-
-//					var discussionID = objects[i].get("objectId");

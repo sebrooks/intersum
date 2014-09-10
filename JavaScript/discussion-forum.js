@@ -1,55 +1,57 @@
 $(document).ready(function(){
 	Parse.initialize("NzjDI96DNyAS8U4DNWYgGxCS8lSg9kyks2azZ2UC","F5p230fkKINZ5KP44qR7hk7isWdD9JXa2Tk1rrjm");
 
-/*
-	var postQuery = new Parse.Query("Post")
-	postQuery.equalTo('', INSERT VARIABLE)
-	postQuery.find({
-		success: function(objects) {
-			for (i=0; i<objects.length; i++) { 
 
-				var postTopic = objects[i].get("text");
-				var postItem = $("<li>")
-				var postnContents = $("<a>")
+function gup( name ){
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return null;
+  else
+    return results[1];
+}
 
-				postItem.addClass("table-view-cell");
-				postContents.addClass("navigate-right");
-				postItem.html(postContents);
-				postContents.html(postTopic);
-				$("li.table-view-cell:last").after(postItem);
-			}
-		},
-		error: function(error) {
-			console.log("Error: " + error.code + " " + error.message);
-		}
-	});
-*/
-	$("#post-submit").click(function(){
+var disscusionID = gup( 'id' );
+
+console.log(disscusionID)
+
 
 	var Post = Parse.Object.extend("Post");
 	var post = new Post();
-	var postText = $("#post-responce").val();
 
+	$("#post-submit").click(function(){
+		var text = $("#post-responce").val();
 
-		post.set("text", postText);
-//		post.set("disscusionID", INSERT VARIABLE )
-//		post.set("user", INSERT VARIABLE)
+		post.set("Description", text);
+		post.set("disscusionID", disscusionID);
 		post.save();
-
 	});
 
+	function loadContentFromParse(){
+		var query = new Parse.Query("Post")
+		query.equalTo('disscusionID', disscusionID)
+		query.find({
+			success: function(objects) {
+				for (i=0; i<objects.length; i++) {
+
+					var postTopic = objects[i].get("Topic");
+					var postItem = $("<li>")
+					var postContents = $("<a>")
+					
+					$("li.table-view-cell:first").after(postItem);
+					postItem.html(postContents);
+					postItem.addClass("table-view-cell");
+					postContents.addClass("navigate-right");
+					postContents.html(postTopic);
+				}
+			},
+			error: function(error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+
+	}
 
 });
-
-/*
-
-var discussionItem = $("<li>")
-var discussionContents = $("<a>")
-
-discussionItem.addClass("table-view-cell");
-discussionContents.addClass("navigate-right");
-discussionItem.html(discussionContents);
-discussionContents.html(localStorage.discussionTitle);
-$("li.table-view-cell:first").before(discussionItem);
-
-*/
