@@ -23,18 +23,16 @@ $(document).ready(function(){
 				for (i=0; i<objects.length; i++) {
 
 					var discussionTopic = objects[i].get("Topic");
-					var discussionID = objects[i].get("objectid");
 					var discussionItem = $("<li>")
 					var discussionContents = $("<a>")					
 
 					discussionItem.addClass("table-view-cell");
 					discussionContents.addClass("navigate-right");
-					discussionContents.attr("id", discussionID);
-					discussionContents.attr("href","disscussion-template.html")
+					discussionItem.attr("id", objects[i].get("objectId") );
+					discussionContents.attr("href","disscussion-template.html?id=" + objects[i].get("objectId") );
 					discussionItem.html(discussionContents);
 					discussionContents.html(discussionTopic);
 					$("li.table-view-cell:first").after(discussionItem);
-					
 				}
 			},
 			error: function(error) {
@@ -44,10 +42,7 @@ $(document).ready(function(){
 
 	}
 
-	$("li").click(function(selection){
-
-		localStorage.discussionID = $(this).get("id");
-		location.assign("disscusion-template.html");
-	});
 
 });
+
+//					var discussionID = objects[i].get("objectId");
