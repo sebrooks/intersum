@@ -15,11 +15,14 @@ $(document).ready(function(){
 
 	var objectId = gup( 'id' );
 
+	loadContentFromParse(objectId);
+
 	console.log(objectId);
 
-	function loadContentFromParse(){
+	function loadContentFromParse(objectId){
 		var query = new Parse.Query("Post")
 		query.equalTo('disscusionID', objectId)
+		query.descending("createdAt");
 		query.find({
 			success: function(objects) {
 				for (i=0; i<objects.length; i++) {
@@ -28,10 +31,14 @@ $(document).ready(function(){
 					var postItem = $("<li>")
 					var postText = $('<a>')
 					
+					console.log(postTopic);
+
+
 					postItem.addClass("table-view-cell");
+					postText.addClass("navigate-right");
 					postText.html(postTopic);
 					postItem.html(postText);
-					$("li.table-view-cell:last").after(postItem);
+					$("li.table-view-cell:last").before(postItem);
 				}
 			},
 			error: function(error) {
@@ -51,6 +58,7 @@ $(document).ready(function(){
 		post.set("text", text);
 		post.set("disscusionID", objectId);
 		post.save();
+		location.reload();
 	});
 
 });
