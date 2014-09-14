@@ -20,7 +20,7 @@ $(document).ready(function(){
 	console.log(objectId);
 
 	function loadContentFromParse(objectId){
-		var query = new Parse.Query("Post")
+		var query = new Parse.Query("Post");
 		query.equalTo('disscusionID', objectId)
 		query.descending("createdAt");
 		query.find({
@@ -39,6 +39,7 @@ $(document).ready(function(){
 					postText.html(postTopic);
 					postItem.html(postText);
 					$("li.table-view-cell:last").before(postItem);
+
 				}
 			},
 			error: function(error) {
