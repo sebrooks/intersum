@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	var Events = Parse.Object.extend("Events");
 	var events = new Events();
-	$("#new-disscusion-button").click(function(){
+	$("#create-event-submit").click(function(){
 		var name = $("#event-name").val();
 		var date = $("#event-date").val();
 		var location = $("#event-location").val();
@@ -18,9 +18,9 @@ $(document).ready(function(){
 		events.set("StartTime", start);
 		events.set("EndTime", end);
 		events.set("Details", description);
-
 		events.set("groupID", "TtQYY23CHY");
 		events.save();
+
 		location.reload();
 		$("div#openModal").fadeOut("slow");
 	});
@@ -40,10 +40,10 @@ $(document).ready(function(){
 					eventsItem.addClass("table-view-cell");
 					eventsContents.addClass("navigate-right");
 					eventsItem.attr("id", eventsID );
-					eventsContents.attr("href","disscussion-template.html?id=" + eventsID );
+					eventsContents.attr("href","Event-Template.html?id=" + eventsID );
 					eventsItem.html(eventsContents);
 					eventsContents.html(eventsTopic);
-					$("li.table-view-cell:first").after(eventsItem);
+					$("li.table-view-cell:first").before(eventsItem);
 				}
 			},
 			error: function(error) {

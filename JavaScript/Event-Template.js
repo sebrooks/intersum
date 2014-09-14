@@ -14,6 +14,8 @@ $(document).ready(function(){
 
 	var objectId = gup( 'id' );
 
+	console.log(objectId);
+
 	var query = new Parse.Query("Events")
 	query.equalTo('objectId', objectId )
 	query.find({
@@ -28,11 +30,11 @@ $(document).ready(function(){
 				var end = objects[i].get("EndTime");
 				var description = objects[i].get("Details");
 
-				$("h2#discussion").append(eventName);
+				$("h2#discussion").append(" " + eventName);
 				$("p#date").html(date);
-				$("p#start").html(location);
-				$("p#end").html(start);
-				$("p#location").html(end);
+				$("p#start").html(start);
+				$("p#start").append(" / " + end);
+				$("p#location").html(location);
 				$("p#details").html(description);
 
 
