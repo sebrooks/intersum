@@ -12,27 +12,10 @@ $(document).ready(function(){
 			localStorage.username = $("#existing-username").val();
 			Parse.User.logIn( username, password)
 
-			location.assign("clubs.html");	
+			location.assign("clubs.html" + "?id=KiBwokQEUU");	
 		}
 
 	});
 
 
 });
-
-  /*      
-				
-		  success: function(user) {  
-        },
-        error: function(error) {
-          console.log("Error!");
-        }
-			}		
-        
-		};
-		else{
-			alert("Error: Missing input feild!")
-		}
-		*/
-
-//last

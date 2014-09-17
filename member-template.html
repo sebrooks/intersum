@@ -1,0 +1,80 @@
+<html>
+<head>
+	<script type="text/javascript" src="JavaScript/parse-sdk.js"></script>
+
+	<script type="text/javascript" src="JavaScript/jquery.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+	<link rel="stylesheet" type="text/css" href="css/ratchet-theme-android.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<title>Members Profile</title>
+	<script type="text/javascript" scr="JavaScript/members-template.js"></script>
+
+</head>
+
+<body>
+
+	<!-- top navigation -->
+	<div class="bar bar-nav">
+		<header class="bar bar-nav">
+			<a href="members.html">
+				<button class="btn btn-link btn-nav pull-left">
+					<span class="icon icon-left-nav"></span>&nbsp;
+				</button>
+			</a>
+		</div>
+
+		<!--actual page content -->
+		<div class="content">
+			<div class="summary">
+				<div class="profile-img">
+					<img>
+				</div>
+
+				<div class="profile-summary">
+					<p><b>Member:</b> 
+
+					</p>
+					
+					<p><b>Age:</b> 
+
+					</p>
+					
+					<p><b>Email:</b> 
+
+					</p>
+				</div>
+			</div>
+
+			<div>
+				<a href="#openModal" rel="modal:open">
+					<button class="btn btn-primary btn-block">
+						<div class="addnew-label">Add File</div>
+						<div class="addnew-symbol">+</div>
+					</button>
+				</a>
+			</div>
+
+			<ul class="table-view">
+				<li class="table-view-cell">
+					<a class="navigate-right">
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<form>
+					File Name: <input id="new-file-name" type="text" name="first-name"><br>
+					File: <input id="new-file-img" type="file" name="pic" accept="image/*">>
+
+					<input id="submit-new-file" type="button" value="Add File">
+				</form>
+			</div>
+		</div>
+
+	</body>
+	</html>
